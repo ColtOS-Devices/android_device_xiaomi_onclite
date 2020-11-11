@@ -287,5 +287,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.sdha_apps_bg_min=8
 
 # Dolby
-vendor.audio.dolby.ds2.enabled=true
+PRODUCT_PROPERTY_OVERRIDES := \
+    vendor.audio.dolby.ds2.enabled=true
 
+# Fling Velocity
+PRODUCT_PROPERTY_OVERRIDES := \
+    ro.min.fling_velocity=160 \
+    ro.max.fling_velocity=20000
